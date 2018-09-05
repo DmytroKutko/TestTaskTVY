@@ -3,7 +3,6 @@ function CitySearch() {
 
     var cityName = document.city.name.value;
     cityName = cityName.charAt(0).toUpperCase() + cityName.substr(1).toLowerCase();
-    alert(cityName);
     var cityExist = true;
 
     $.getJSON("cities.json", function (json) {
